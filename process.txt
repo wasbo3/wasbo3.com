@@ -1,12 +1,5 @@
-# --- START & SAVE DEV SESSION ---
-git checkout dev
-git pull origin dev
+# --- 1. START SESSION ---
+git checkout dev && git pull origin dev
 
-# Save work
-git add .
-git commit -m "your message"
-git push origin dev
-
-# --- PUSH DEV DIRECTLY TO MAIN (Without switching branches!) ---
-git push origin dev:main
-
+# --- 2. SAVE & PUSH EVERYTHING AT ONCE ---
+git commit -am "your message" && git push origin dev && git push origin dev:main --force
