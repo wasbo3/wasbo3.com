@@ -1,3 +1,0 @@
-git start
-git save ""
-git deploy ""
