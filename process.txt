@@ -1,18 +1,12 @@
-# STARTING CODEING DEV SESSION 
+# --- START & SAVE DEV SESSION ---
 git checkout dev
-git pull
+git pull origin dev
 
-# SAVING CODING DEV SESSION
+# Save work
 git add .
-git commit -m "describe what you changed"
-git push
+git commit -m "your message"
+git push origin dev
 
-# PUSHING DEV TO MAIN 
-git checkout main
-git pull
-git merge dev
-git push
+# --- PUSH DEV DIRECTLY TO MAIN (Without switching branches!) ---
+git push origin dev:main
 
-# PUSHING MAIN TO SERVER 
-cd /var/www/html
-git pull
