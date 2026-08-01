@@ -1,11 +1,10 @@
-body {
-    background-color: #001323;
+ body {
+    background-color: #0C0D10;
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-family: JetBrains Mono,monospace;
 }
-
 
 nav {
     padding: 10px;
@@ -26,10 +25,53 @@ ul {
 li a {    
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    
+}
+
+.hi {
+    display: block;
+    margin: 0 auto;
+}
+
+.hit {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #2A2E34;
+  width: 50%;
 }
 
 
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}                
+
+.ptitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+main hr {
+    width: 20%;
+    border: 1px solid white;
+    margin: 15px auto;
+}
 .gamelist {
     display: flex;
     flex-wrap: wrap;
@@ -50,13 +92,6 @@ li a {
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    transition: rotate 1.5s ease ;
-
-
-}
-
-.gamecard:hover {
-    rotate: 360deg;
 }
 
 .hit {
