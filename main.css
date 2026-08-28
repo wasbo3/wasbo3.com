@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg-color: #0C0D10;
+    --text-color: #FFFFFF;
+    --muted-text-color: #888888;
+    --divider-color: #2A2E34;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+nav {
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    margin-right: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.hi {
+    display: block;
+    margin: 0 auto;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted-text-color);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--divider-color);
+    width: 50%;
+}
+
+.breadcrumb {
+    color: var(--muted-text-color);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 28px 100px 0;
+}
+
+.breadcrumb a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 6px;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.ptitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+main hr {
+    width: 20%;
+    border: 1px solid var(--text-color);
+    margin: 15px auto;
+}
+
+@media (max-width: 720px) {
+    .breadcrumb {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
