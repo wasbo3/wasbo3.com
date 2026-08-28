@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wasbo3.com</title>
+    <title>Blog | wasbo3.com</title>
     <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/blog/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,9 +19,108 @@
             <li><a href="/servers/">Game Servers</a></li>
             <li><a href="/projects/">Projects</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/extras/   ">Extras</a></li>
         </ul>
     </nav>
     <hr>
-    <p class="breadcrumb"><a href="/">WASBO3.COM</a><span aria-hidden="true">/</span><span aria-current="page">BLOG</span></p>
+    <p class="breadcrumb"><a href="/">WASBO3.COM</a> / <span>BLOG</span></p>
+
+    <main class="blog-page">
+        <section class="hero">
+            <p class="eyebrow">WASBO3 LAB</p>
+            <h1>Build logs, bad ideas, and weird little wins.</h1>
+            <p class="subtitle">
+                I write about homelabbing, side projects, web tinkering, and the things I learn while trying stuff that probably should not work.
+            </p>
+            <div class="hero-actions">
+                <a href="#featured" class="primary-link">Latest post</a>
+                <a href="#posts" class="secondary-link">All entries</a>
+            </div>
+        </section>
+
+        <div class="filter-bar" aria-label="Blog categories">
+            <button class="chip active">All</button>
+            <button class="chip">Homelab</button>
+            <button class="chip">Web</button>
+            <button class="chip">Projects</button>
+            <button class="chip">Servers</button>
+            <button class="chip">Random</button>
+        </div>
+
+        <article id="featured" class="featured-post">
+            <div class="featured-copy">
+                <p class="meta">FEATURED / JULY 09, 2026</p>
+                <h2>Setting up a tiny homelab with way too many services</h2>
+                <p>
+                    A breakdown of the small server setup I keep tinkering with, what actually gets used, and which services looked cool until they became a maintenance problem.
+                </p>
+                <a href="#" class="read-link">Read article →</a>
+            </div>
+            <div class="featured-visual" aria-hidden="true">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="prompt">root@lab:~$</span>
+                        <span>docker compose up</span>
+                        <span class="prompt">root@lab:~$</span>
+                        <span>watch -n 5 uptime</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section id="posts" class="post-grid">
+            <article class="post-card">
+                <p class="meta">HOMELAB / JUN 18</p>
+                <h3>My current self-hosted stack</h3>
+                <p>What I actually run at home, and which apps deserve a permanent slot.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="post-card">
+                <p class="meta">SERVERS / MAY 02</p>
+                <h3>Why my Minecraft server kept lagging</h3>
+                <p>The issue wasn’t the map. It was the surprisingly expensive lesson in resource planning.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="post-card">
+                <p class="meta">WEB / APR 21</p>
+                <h3>Building a personal site with no framework</h3>
+                <p>Why plain HTML and CSS can still feel intentional when the structure is solid.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="post-card">
+                <p class="meta">RANDOM / MAR 14</p>
+                <h3>Things I learned from a failed project</h3>
+                <p>Some builds fail hard, but the best part is usually the debugging story afterward.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="post-card">
+                <p class="meta">PROJECTS / FEB 08</p>
+                <h3>Little tools I keep writing for myself</h3>
+                <p>Quick utilities, scripts, and tiny experiments that solve weird problems in the best way.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article class="post-card">
+                <p class="meta">HOMELAB / JAN 27</p>
+                <h3>Monitoring my setup without going insane</h3>
+                <p>How I keep tabs on uptime, resource usage, and weird outages without turning it into a full-time job.</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>wasbo3.com</p>
+    </footer>
 </body>
 </html>
