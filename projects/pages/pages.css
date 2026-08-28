@@ -1,0 +1,53 @@
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+.hero {
+    border-left: 4px solid #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 70px;
+}
+
+
+h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.content img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.content p {
+    line-height: 1.7;
+}
+
+.finished{
+    color: #3d9b65;
+    font-weight: bold;
+}
+
+
+
+.developement{
+    color: yellow;
+    font-weight: bold;
+}
+
+
+.notstarted{
+    color: red;
+    font-weight: bold;
+}
+
