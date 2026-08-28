@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | wasbo3.com</title>
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="blog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>wasbo3.com</title>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -22,50 +19,6 @@
         </ul>
     </nav>
     <hr>
-    <main class="blog-page">
-        <header class="blog-hero">
-            <p class="breadcrumb"><a href="/">WASBO3.COM</a><span aria-hidden="true">/</span><span aria-current="page">BLOG</span></p>
-            <h1>Latest from the blog</h1>
-            <p class="blog-intro">Build logs, server updates, and the occasional thought from behind the screen.</p>
-        </header>
-
-        <section class="bloglist" aria-label="Blog posts">
-            <article class="blogcard" data-published="2026-07-09">
-                <p class="post-meta">JUL 09, 2026 <span aria-hidden="true">•</span> FIRST POST</p>
-                <h2><a href="/blog/2026-07-09/">Welcome to the blog</a></h2>
-                <p>This is the first entry in the new blog. Use this card for the newest or most important post.</p>
-                <a class="read-post" href="/blog/2026-07-09/">Read post <span aria-hidden="true">→</span></a>
-            </article>
-
-            <article class="blogcard concept-post">
-                <p class="post-meta">COMING SOON <span aria-hidden="true">•</span> BUILD LOG</p>
-                <h2>What I’m building next</h2>
-                <p>A simple template for sharing progress, screenshots, decisions, and small wins as a project evolves.</p>
-                <span class="draft-label">Draft card</span>
-            </article>
-
-            <article class="blogcard concept-post">
-                <p class="post-meta">COMING SOON <span aria-hidden="true">•</span> SERVER UPDATE</p>
-                <h2>Notes from the server room</h2>
-                <p>Use a recurring format like this for uptime news, game-server changes, and community updates.</p>
-                <span class="draft-label">Draft card</span>
-            </article>
-
-        </section>
-    </main>
-    <script>
-        const blogList = document.querySelector('.bloglist');
-        const publishedPosts = [...blogList.querySelectorAll('[data-published]')];
-
-        publishedPosts.sort((first, second) => new Date(second.dataset.published) - new Date(first.dataset.published));
-        blogList.prepend(...publishedPosts);
-
-        publishedPosts.forEach(post => post.classList.remove('featured-post'));
-        publishedPosts[0]?.classList.add('featured-post');
-    </script>
-    <footer>
-        <hr>
-        <p>wasbo3.com</p>
-    </footer>
+    <p class="breadcrumb"><a href="/">WASBO3.COM</a><span aria-hidden="true">/</span><span aria-current="page">BLOGgit </span></p>
 </body>
 </html>
